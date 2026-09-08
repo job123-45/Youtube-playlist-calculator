@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const advance= document.getElementById("advanced-options");
     const calculateBtn = document.getElementById("calculate-btn");
     
-    const API_KEY="AIzaSyA4l9zLYfrnUIJ-FqOPUznaJUY6IS-xnrw";
+    const API_KEY="";
     
     // State management
     let isLoading = false;
