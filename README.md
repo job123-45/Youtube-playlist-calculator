@@ -87,15 +87,11 @@ Open the folder in VS Code.
 
 ### 3. Configure API Key
 
-Create a YouTube Data API v3 key from Google Cloud Console.
+Create a YouTube Data API v3 key in Google Cloud Console. This app runs in the browser, so the key is visible in its source and network requests; it cannot be kept secret in a static site.
 
-Replace:
+Restrict the key to the YouTube Data API v3 and to the exact HTTP referrers used by your local and deployed site. Do not commit an unrestricted key. If you need a secret key, move the API requests behind a server-side proxy.
 
-```javascript
-const API_KEY = "YOUR_API_KEY";
-```
-
-with your own API key.
+Set the local `API_KEY` constant in `script.js` to that restricted key.
 
 ### 4. Run
 
